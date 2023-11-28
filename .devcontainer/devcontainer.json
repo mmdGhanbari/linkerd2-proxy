@@ -1,13 +1,6 @@
 {
 	"name": "linkerd2-proxy",
-	"build": {
-		"dockerfile": "Dockerfile",
-		"args": {
-			"DEV_VERSION": "v42",
-			"http_proxy": "${localEnv:http_proxy}",
-			"https_proxy": "${localEnv:https_proxy}"
-		}
-	},
+	"image": "rust:1.74",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -37,7 +30,7 @@
 	"overrideCommand": false,
 	"remoteUser": "code",
 	"containerEnv": {
-		"CXX": "clang++-14",
+		"CXX": "clang++-14"
 	},
 	"mounts": [
 		{
