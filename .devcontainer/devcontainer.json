@@ -1,6 +1,6 @@
 {
 	"name": "linkerd2-proxy",
-	"image": "docker-registry.internal.sahabme.ir/rust:1.71",
+	"image": "docker-registry.internal.sahabme.ir/rust:1.74",
 	"customizations": {
 		"vscode": {
 			"extensions": [
